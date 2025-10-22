@@ -148,14 +148,14 @@ li a{
     padding-right: 5%;
 }
 .mission-content ul{
-    display: flex; 
-    justify-content: flex-start; 
+    display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 10%;
 }
 .mission-content li{
     list-style: circle;
     color: rgb(10, 77, 10);
+    width: 50%;
 }
 
 .mission-img img{
@@ -248,9 +248,7 @@ li a{
     transition: all 0.3s ease;
 }
 /* MAIN - SECTION 5 GALERIE */
-.galerie{
 
-}
 .galerie-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -360,7 +358,6 @@ footer{
     width: 20%;
     margin-top: 5%;
     padding: 10px;
-
 }
 .content ul{
     padding: 0;
@@ -386,4 +383,120 @@ footer{
     
 }
 
-/*  */
+/* PAGE ABOUT*/
+/* SECTION 1 ABOUT */
+.about{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: linear-gradient(to right,rgb(98, 152, 3),rgb(16, 80, 16))
+}
+.about h1{
+    color: white;
+    text-align: center;
+}
+/* SECTION 2 ENGAGMENT */
+.engagement-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 5%;
+}
+.engagement-img img{
+    border-top-left-radius: 10px;
+    box-shadow: 10px 10px rgb(8, 72, 8);
+    width: 100%;
+}
+.engagement-content h4{
+    margin: 0;
+}
+.engagement-content h2{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.engagement-content a{
+    color: white;
+    background-color: rgb(10, 77, 10);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 30%;
+}
+.engagement-content a:hover{
+    background: linear-gradient(orange, green);
+    transition: all 0.3s ease;
+}
+/* SECTION 3 HUMANS */
+.humans-content{
+    text-align: center;
+    margin-top: 5%;
+    padding: 2% 20%;
+}
+.humans-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.humans-card p{
+    color: orange;
+}
+.humans-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px 20px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(236, 229, 229);
+}
+.humans-card img{
+    width: 100%;
+    height: 15vh;
+    border-radius: 50%;
+}
+/* SECTION 4 IMPACT */
+
+.impact-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.impact-content{
+    text-align: center;
+    padding: 2% 20%;
+}
+.impact-img{
+    display: flex;
+    gap: 20px;
+}
+.impact-img1{
+    width: 50%;
+}
+.impact-img2{
+    width: 50%;
+}
+.impact-img img{
+    width: 100%;
+    max-height: 30vh;
+    border-radius: 20px;
+}
+.impact-cards{
+    display: flex;
+    gap: 20px;
+}
+.impact-card{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px rgb(236, 229, 229);
+    width: 40%;
+    text-align: center;
+    padding: 60px;
+}
+.impact-card span{
+    font-weight: 900;
+    font-size: 2rem;
+}
