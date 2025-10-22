@@ -9,15 +9,21 @@
 }
 body{
     font-family: "DM_Sans", sans-serif;
-    background-color: bisque;
+    background-color: rgb(255, 237, 215);
     margin: 0;
 }
-
-.container {
+.container{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+h2{
+    font-weight: 900;
 }
 
 /* HEADER */
@@ -44,15 +50,19 @@ nav img{
     border: 1px solid green;
     border-radius: 10px;
     color: white;
-    background-color:green;
+    background:linear-gradient(to left,rgb(138, 199, 15),green);
     display: inline-block;
     padding: 10px 20px;
+}
+.btn-nav:hover{
+    background:linear-gradient(to right,rgb(138, 199, 15),green);
+    transition: all 0.3s ease;
 }
 nav ul{
     display: flex;
     gap: 10%;
     border-top: 1px solid black;
-    border-bottom:1px solid black;
+    border-bottom: 1px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -67,11 +77,10 @@ li a{
 .agir-container{
     display: flex;
     justify-content: space-between;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     gap: 20px;
-    padding-bottom: 3%;
-    padding-top: 3%;
+
 }
 .pouce img{
     width: 100%;
@@ -89,6 +98,10 @@ li a{
     margin-top: 30px;
     display: inline-block;
 }
+.agir-container a:hover{
+    background: linear-gradient(orange, green);
+    transition: all 0.3s ease;
+}
 /* MAIN - SECTION 2 NOS PROJETS */
 .projets{
     padding-top: 3%;
@@ -103,6 +116,9 @@ li a{
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+}
+.card:hover{
+    border: 1px solid black;
 }
 .card h3{
     border-bottom: 2px solid rgb(236, 229, 229);
@@ -122,8 +138,7 @@ li a{
     display: flex;
     align-items: center;
     padding: 2%;
-    gap: 10%;
-    margin: 5% 10%;    
+    gap: 10%;    
 }
 .mission-content{
     width: 70%;
@@ -132,7 +147,6 @@ li a{
     width: 40%;
     padding-right: 5%;
 }
-
 .mission-content ul{
     display: flex; 
     justify-content: flex-start; 
@@ -156,6 +170,10 @@ li a{
     color: white;
     margin-top: 30px;
     display: inline-block;
+}
+.mission-content a:hover{
+    background: linear-gradient(orange, green);
+    transition: all 0.3s ease;
 }
 /* MAIN - SECTION 4  NEWS*/
 .news-container{
@@ -192,10 +210,14 @@ li a{
 .btn-article{
     color: orange;
 }
+.btn-article:hover{
+    color: green;
+    transition: all 0.3s ease;
+}
 .news-content{
     display: flex;
     justify-content: space-between;
-    margin: 20px 10px;
+    margin-top: 20px;
     gap: 20px;
 }
 .news-content img{
@@ -218,15 +240,39 @@ li a{
     width: 15%;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.btn-articles:hover{
+    background: linear-gradient(orange, green);
+    transition: all 0.3s ease;
 }
 /* MAIN - SECTION 5 GALERIE */
+.galerie{
+
+}
 .galerie-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-.galerie img{
+.galerie-content > div:nth-child(1){
+    grid-row: 1 / span 2;  
+}
+.galerie-content > div:nth-child(5){
+    grid-column: 1 / span 2;
+}
+.galerie-content > div:nth-child(3){
+    grid-row: 1 / span 2;
+    grid-column: 3;
+}
+.galerie-content img{
+    border-radius: 5px;
     width: 100%;
+    height: 100%;
+}
+.img-5, .img-6{
+   height: 55%;
 }
 
 /* MAIN - SECTION 6 VIDEO */
@@ -234,6 +280,12 @@ li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.video-container{
+    margin-top: 2%;
+}
+.video-container h2{
+    text-align: right;
 }
 .videos{
     display: flex;
@@ -250,10 +302,15 @@ li a{
     padding: 10px 20px;
     border-radius: 10px;
     margin: 10px 20px;
+    margin-top: 20px;
 }
 .btn-video a{
     text-decoration: none;
     color: white;
+}
+.btn-video:hover{
+    background-color: green;
+    transition: all 0.3s ease;
 }
 /* MAIN - SECTION 7 DON */
 .don-container{
@@ -273,12 +330,17 @@ li a{
     padding: 10px 20px;
     border-radius: 10px;
 }
+.btn-don:hover{
+    background: linear-gradient(white,orange);
+    transition: all 0.3s ease;
+}
 /* MAIN -SECTION 8 LOGOS */
 .logos{
     display: flex;
     gap: 50%;
     align-items: flex-start;
     width: 20%;
+    margin-bottom: 20px;
 }
 .logos img{
     width: 100%;
@@ -309,10 +371,19 @@ footer{
 }
 .content a{
     color: white;
-    
+}
+.content a:hover{
+   text-decoration: underline dotted;
+   transition: all 0.3s ease;
 }
 .plan iframe{
     border-radius: 5px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
+@media screen {
+    
+}
+
+/*  */
